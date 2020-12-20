@@ -1,0 +1,28 @@
+#include <iostream>
+#include <string>
+
+
+using namespace std;
+
+
+int main(){
+
+
+    const char * file = "file.txt";  // we name the file at first.
+    const char * myfile = "myfile.txt"; // we rename the same file.
+
+    rename(file,myfile); //this program rewrites the file name.
+    remove(myfile); //this program removes the file from the debug file.
+    FILE * fh = fopen(file,"w");// there are various modes to  operate the file such as "w" for write/creation "r" to just read the file and "a" to edit.
+    fclose(fh);// this is important dont forget to close the file after using the modes of operating the file.
+
+
+
+
+
+
+
+
+
+    return 0;
+}
